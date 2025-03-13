@@ -1,0 +1,23 @@
+@charset "utf-8";
+.grax_tm_hero {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+}
+.grax_tm_hero .ripple {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.grax_tm_hero .ripple:before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}

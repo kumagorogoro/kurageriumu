@@ -1,0 +1,642 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+body {
+  color: white;
+}
+@media screen and (min-width: 767px) {
+  main {
+    font-size: 20px;
+  }
+}
+/* main */
+#floor {
+  background-image: url(../img/top/topback.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.news {
+  width: 80%;
+  margin: 25% auto;
+}
+.concept,
+.info,
+.pickup,
+.access {
+  width: 80%;
+  margin: 30% auto;
+  padding-top: 20px;
+}
+.access {
+  margin: 30% auto 40%;
+}
+.news div:nth-of-type(1),
+.concept div:nth-of-type(1),
+.info div:nth-of-type(1),
+.pickup div:nth-of-type(1),
+.access div:nth-of-type(1) {
+  margin-bottom: 5%;
+}
+.news div small,
+.concept div small,
+.info div small,
+.pickup div small,
+.access div small {
+  border-bottom: 1px white dashed;
+}
+@media screen and (min-width: 767px) {
+  .news {
+    width: 80%;
+    margin: 5% auto;
+  }
+  .concept,
+  .info,
+  .pickup,
+  .access {
+    width: 80%;
+    margin: 20% auto;
+  }
+}
+
+/* TOP */
+.TOP {
+  width: 90px;
+  margin: 0 0 2% auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+.TOP a {
+  color: #fff;
+}
+.TOP p:first-child {
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .TOP {
+    font-size: 1rem;
+  }
+}
+/* hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: relative;
+}
+.hero-text {
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 20vh;
+  right: 20vw;
+  font-size: 2rem;
+}
+.hero-text-margin {
+  top: 45vh;
+  right: 30vw;
+  margin-top: 5%;
+}
+.hero div img {
+  margin-top: 20vh;
+  height: 80vh;
+  object-fit: contain;
+}
+.hero .hours {
+  position: absolute;
+  right: 8vw;
+  bottom: -25vh;
+  width: 200px;
+}
+.gradient {
+  height: 10vh;
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+}
+@media screen and (min-width: 767px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  .gradient {
+    height: 10vh;
+  }
+  .hero .hours {
+    position: absolute;
+    right: 18vw;
+    bottom: -25vh;
+    width: 300px;
+  }
+}
+/* news */
+.news ul {
+  list-style: none;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+.news ul li {
+  width: fit-content;
+}
+.news ul li a {
+  display: block;
+  width: 100%;
+  border-bottom: 1px white dashed;
+  text-align: left;
+  margin: 5% auto;
+  color: white;
+}
+.news div div small::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #36cef4;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .news ul {
+    padding: 3%;
+    /* background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgb(0, 0, 0),
+      rgba(255, 255, 255, 0)
+    ); */
+    background: rgba(22, 30, 143, 0.58);
+  }
+  .newsflex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .newsflex dl {
+    display: flex;
+  }
+  .newsflex dt {
+    width: 150px;
+  }
+}
+
+/* concept */
+.concept div div small::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #36cef4;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+.concept h3 {
+  width: 95%;
+  margin: 0 auto 10%;
+}
+.concept p {
+  width: 95%;
+  margin: 0 auto 5%;
+}
+.concept a {
+  color: white;
+  display: block;
+  width: fit-content;
+  margin: 15% auto;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 100;
+}
+.concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-rows: 75px 125px 37.5px 37.5px 37.5px 125px 75px;
+}
+.concept-grid img {
+  object-fit: contain;
+  height: 200px;
+  position: relative;
+  z-index: 100;
+}
+.concept-grid img:nth-of-type(1) {
+  grid-column: 1/2;
+  grid-row: 2/5;
+}
+.concept-grid img:nth-of-type(2) {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.concept-grid img:nth-of-type(3) {
+  grid-column: 1/2;
+  grid-row: 6/8;
+}
+.concept-grid img:nth-of-type(4) {
+  grid-column: 3/4;
+  grid-row: 4/7;
+}
+
+@media screen and (min-width: 767px) {
+  .concept {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+  }
+  .conceptflex {
+    width: 50%;
+  }
+  .concept-grid {
+    width: 50%;
+  }
+  .concept-grid {
+    grid-template-columns: 1.5fr 0.001fr 1.5fr;
+    grid-template-rows: 112.5px 187.5px 56.25px 56.25px 56.25px 187.5px 112.5px;
+  }
+  .concept-grid img {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .concept-grid img {
+    height: 300px;
+  }
+}
+
+/* info */
+.info div small::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #36cef4;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+.price-container {
+  position: relative;
+  z-index: 100;
+}
+.clock-container,
+.price-container {
+  background: rgba(22, 30, 143, 0.58);
+  padding: 5%;
+}
+.clock-container-text,
+.price-container-text {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+/* clock */
+.iconclock,
+.iconwollet {
+  width: 20px;
+}
+#clocktitlebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.clocktitlebox img {
+  margin-right: 10px;
+  padding-bottom: 3px;
+}
+.clock-container {
+  position: relative;
+  z-index: 100;
+}
+.clock-container table {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 2%;
+}
+.closed {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 2%;
+}
+/* price */
+.price-container div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-container div:nth-of-type(1) img {
+  margin-right: 10px;
+  padding-bottom: 3px;
+}
+#pricetitlebox {
+  margin-bottom: 3%;
+}
+/* 基本料金・セット料金 */
+#menu {
+  display: flex;
+  width: calc(95% + 0px);
+  margin: 0 auto;
+  opacity: 1;
+  z-index: 100;
+}
+.price-container input {
+  display: none;
+}
+#menu > li > label {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+#menu > li {
+  width: calc(100% / 3);
+  /* border: 1px solid black; */
+  padding: 5px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#menu > li:nth-child(1),
+#boxA {
+  background: rgb(6, 135, 179);
+}
+#menu > li:nth-child(2),
+#boxB {
+  background: white;
+  color: black;
+}
+#boxA,
+#boxB {
+  border-top: none;
+  display: none;
+  width: 95%;
+  margin: 0 auto;
+  table-layout: fixed;
+  margin-bottom: 2%;
+}
+#boxA tbody,
+#boxB tbody {
+  width: 100%;
+}
+#boxB th:nth-child(1) {
+  width: 30%;
+}
+#boxA tbody tr th,
+#boxB tbody tr th {
+  font-weight: 100;
+}
+#boxA tbody tr td,
+#boxB tbody tr td {
+  font-weight: 100;
+  text-align: center;
+  width: 70%;
+}
+/* 営業時間・価格表 border */
+#boxA {
+  border: none;
+}
+#boxA tbody tr td,
+#boxA tbody tr th {
+  border: none;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+#boxB tbody tr td,
+#boxB tbody tr th {
+  border: none;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+#boxA tbody tr td:first-child,
+#boxA tbody tr th:first-child,
+#boxB tbody tr td:first-child,
+#boxB tbody tr th:first-child {
+  border-left: none;
+}
+#boxA tbody tr:first-child td,
+#boxA tbody tr:first-child th,
+#boxB tbody tr:first-child td,
+#boxB tbody tr:first-child th {
+  border-top: none;
+}
+#menuA:checked ~ #boxA,
+#menuB:checked ~ #boxB {
+  display: table;
+}
+#menuA:checked ~ #menu > li:nth-child(1) {
+  border-bottom: none;
+}
+#menuA:checked ~ #menu > li:nth-child(1) > label {
+  cursor: default;
+}
+#menuB:checked ~ #menu > li:nth-child(2) {
+  border-bottom: none;
+}
+#menuB:checked ~ #menu > li:nth-child(2) > label {
+  cursor: default;
+}
+@media screen and (min-width: 767px) {
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1%;
+  }
+  .openingtimes-container {
+    width: 50%;
+  }
+  .price-container {
+    width: 50%;
+  }
+  .clock-container,
+  .price-container {
+    padding: 10px;
+  }
+  .clock-container-text,
+  .price-container-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* pickup */
+.pickup div small::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #36cef4;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+
+.slider img {
+  width: 100%; /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute; /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666; /*矢印の色*/
+  border-right: 2px solid #666; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px; /*ドットボタンのサイズ*/
+  height: 8px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc; /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #333; /*ドットボタンの現在地表示の色*/
+}
+
+/* access */
+.access div small::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #36cef4;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+.access-container div {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 2%;
+}
+.access-container div p span {
+  display: block;
+}
+.access div:nth-of-type(2) {
+  width: fit-content;
+}
+.access div:nth-of-type(2) img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 3%;
+}
+.access-container div:nth-of-type(1) {
+  margin-bottom: 2%;
+  width: fit-content;
+  margin: 0 0 1% 0;
+}
+.access p:nth-of-type(1) {
+  font-size: 0.8rem;
+  width: fit-content;
+}
+.access p:nth-of-type(2) {
+  font-size: 0.8rem;
+}
+iframe {
+  display: block;
+  width: 80vw;
+  height: 40vw;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 767px) {
+  .access-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .access-container div:nth-of-type(2) {
+    height: 30vh;
+    margin: 0 auto 2%;
+  }
+  .access div:nth-of-type(2) img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.5%;
+  }
+  .access-container div p span {
+    display: inline;
+  }
+  .access p:nth-of-type(1) {
+    font-size: 1.2rem;
+  }
+  .access p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+  iframe {
+    width: 50vw;
+    height: 25vw;
+  }
+}

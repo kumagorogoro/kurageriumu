@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*---------------------------------------------------*/
+/*	04) GRAX HERO
+/*---------------------------------------------------*/
+
+.grax_tm_hero {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+}
+
+/*---------------------------------------------------*/
+/*	13) GRAX GLITCH EFFECT
+/*---------------------------------------------------*/
+
+.grax_tm_hero .glitch_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.glitch:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.grax_tm_hero .ripple {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.grax_tm_hero .ripple:before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.container.water {
+  visibility: hidden;
+}
+
+.my_shape {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -11px;
+}
+.my_shape .svg {
+  width: 100%;
+  height: 100%;
+}
+.grax_tm_down.shape {
+  bottom: 20%;
+}
+.my_shape svg {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.progressbar {
+  position: fixed;
+  height: 100px;
+  width: 1px;
+  bottom: 25px;
+  right: -25px;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.progressbar.animate {
+  right: 25px;
+}
+
+.progressbar .line {
+  position: absolute;
+  width: 1px;
+  height: auto;
+}
+
+.progressbar .text {
+  position: absolute;
+  top: -77%;
+  left: 0px;
+  font-family: "Poppins";
+  font-size: 13px;
+  transform: rotateZ(90deg);
+  text-transform: uppercase;
+  transform-origin: left;
+  white-space: nowrap;
+}
+.progressbar a {
+  text-decoration: none;
+  color: #000;
+}

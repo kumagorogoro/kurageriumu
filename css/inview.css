@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* inview index */
+#news,#concept,#information,#pickup,#access{
+    opacity:0;
+    transition:all 1s;
+    transform: translateY(50px);
+}
+#news.fade,#concept.fade,#information.fade,#pickup.fade,#access.fade{
+    opacity:1;
+    transform: translateY(0);
+    position: relative;
+    z-index: 100;
+}
+
+
+/* inview event */
+#symphony,#photo,#kaisaigaiyou{
+    opacity:0;
+    transition:all 1s;
+    transform: translateY(50px);
+}
+#symphony.fade,#photo.fade,#kaisaigaiyou.fade{
+    opacity:1;
+    transform: translateY(0);
+}

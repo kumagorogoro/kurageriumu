@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 767px) {
+  html {
+    scroll-padding: 150px;
+  }
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #fff, #00000000);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: top 0.8s ease; /* 0.3秒の遷移を追加 */
+}
+
+header h1 {
+  width: 80px;
+  padding-left: 10px;
+}
+header nav ul li a {
+  text-shadow: 1px 1px 3px black;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 767px) {
+  header {
+    position: fixed;
+    align-items: center;
+    padding: 0 100px;
+  }
+  header h1 {
+    width: 200px;
+    padding: 10px;
+  }
+}
+/* sp-nav */
+.sp-nav {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+  background: #726dd4d5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 4;
+  line-height: 2;
+}
+.sp-nav.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.sp-nav ul li a {
+  color: white;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+.sp-nav>ul>li {
+  margin-bottom: 20px;
+}
+.sp-nav .sp-sub-menu li a{
+  font-size:1rem;
+}
+.sp-nav .sp-sub-menu li{
+  text-indent:1em;
+}
+
+/* pc-nav */
+.pc-nav {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .pc-nav {
+    display: flex;
+  }
+
+  /* 親メニュー - Parent nav */
+  nav > ul > li {
+    position: relative;
+    float: left;
+    margin-right: 45px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul a:hover {
+    color: #9ea0a1;
+  }
+
+  /* 子メニュー - .sub-menu */
+  nav .sub-menu {
+    position: absolute;
+    width: 200px;
+    background: rgba(220, 221, 221, 0.897);
+    top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  nav .sub-menu a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-size:1rem;
+  }
+  nav .sub-menu a:hover {
+    color: #fff;
+  }
+
+  /* ホバーで子メニュー表示 */
+  nav .menu-item-has-children:hover ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  nav li.menu-item-has-children li a:hover {
+    background: rgba(146, 146, 146, 0.649);
+  }
+}
+
+/* openbtn */
+.openbtn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+.openbtn span {
+  display: inline-block;
+  transition: all 0.4s; /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0); /* シャドウ */
+}
+.openbtn span:nth-of-type(1) {
+  top: 15px;
+  width: 45%;
+}
+.openbtn span:nth-of-type(2) {
+  top: 23px;
+  width: 35%;
+}
+.openbtn span:nth-of-type(3) {
+  top: 31px;
+  width: 20%;
+}
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-135deg);
+  width: 30%;
+  box-shadow: none;
+}
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.openbtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(135deg);
+  width: 30%;
+  box-shadow: none;
+}
+@media screen and (min-width: 767px) {
+  .openbtn {
+    display: none;
+  }
+}

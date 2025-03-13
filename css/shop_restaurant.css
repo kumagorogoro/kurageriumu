@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+video {
+  vertical-align: bottom;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#shop,
+#restaurant {
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 767px) {
+  #shop,
+  #restaurant {
+    width: 80%;
+  }
+}
+/* hero */
+.hero {
+  position: relative;
+  margin-bottom: 20px;
+}
+.hero h2 {
+  font-size: 6vw;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(128, 128, 128, 0.5);
+  width: 50%;
+  padding: 6.5%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 767px) {
+  .hero h2 {
+    font-size: 4vw;
+  }
+}
+/* center-nav */
+.center-nav {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.center-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.center-nav ul li a {
+  display: block;
+  width: 110px;
+  height: 50px;
+  padding-top: 10px;
+  color: rgb(10, 10, 126);
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+/* shop,restaurant */
+#shop,
+#restaurant {
+  margin-bottom: 100px;
+  color: rgb(10, 10, 126);
+}
+.shop-flex,
+.restaurant-flex {
+  margin-bottom: 20px;
+}
+.shop-flex h4,
+.restaurant-flex h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.shop-right,
+.restaurant-left {
+  margin-bottom: 50px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .shop-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+  .shop-flex img {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .restaurant-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+  .restaurant-flex img {
+    width: 500px;
+  }
+}
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%; /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute; /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666; /*矢印の色*/
+  border-right: 2px solid #666; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px; /*ドットボタンのサイズ*/
+  height: 8px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc; /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #333; /*ドットボタンの現在地表示の色*/
+}
+
+/* ダイニングモーダル */
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area {
+  display: none;
+}
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+  background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #666;
+}
+.gallery-list .btn,
+.gallery-list2 .btn {
+  background-color: rgb(10, 10, 126);
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+/* TOP */
+.TOP {
+  width: 90px;
+  margin: 0 0 2% auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+.TOP a {
+  color: rgb(10, 10, 126);
+}
+.TOP p:first-child {
+  text-align: center;
+}

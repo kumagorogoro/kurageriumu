@@ -1,0 +1,61 @@
+.pagelink {
+  background: #ccc;
+  padding: 10% 5%;
+  margin-bottom: 5%;
+}
+.pagelink a img {
+  width: 100%;
+}
+.pagelink a {
+  display: block;
+  width: 90%;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.pleft {
+  color: white;
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+.pright {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.back {
+  margin-bottom: 20%;
+  text-align: center;
+}
+.back a {
+  color: rgb(10, 10, 126);
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 767px) {
+  .pagelink {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ccc;
+    padding: 0 0;
+  }
+  .pagelink a img {
+    width: 300px;
+  }
+  .pagelink a {
+    margin: 5% 10%;
+    width: 300px;
+    text-decoration: none;
+  }
+  .pleft {
+    text-align: left;
+    margin: 0 0 0 0;
+  }
+  .pright {
+    text-align: right;
+  }
+  .back {
+    margin-bottom: 5%;
+    text-align: center;
+  }
+}

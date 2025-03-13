@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="img/kurage-logo4.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クラゲリウム</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One&family=Kosugi+Maru&family=Rampart+One&family=Shippori+Mincho:wght@400;500;600;700;800&family=Yuji+Syuku&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS読み込み -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+    />
+    <link rel="stylesheet" href="css/naminami.css">
+    <link rel="stylesheet" href="css/inview.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/event.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <div class="openbtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <header>
+      <h1>
+        <a href="index.html"
+          ><img src="img/kurage-logo4.png" alt="クラゲリウム"
+        /></a>
+      </h1>
+      <nav class="sp-nav">
+        <ul>
+          <li>
+            <a href="index.html"><p>Top</p> </a>
+            <ul class="sp-sub-menu">
+              <li><a href="index.html#news">最新情報</a></li>
+              <li><a href="index.html#concept">クラゲリウムについて</a></li>
+              <li><a href="index.html#information">チケット・料金</a></li>
+              <li><a href="index.html#pickup">お知らせ</a></li>
+              <li><a href="index.html#access">アクセス</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="floorguide.html"><p>Floor Guide</p> </a>
+          </li>
+          <li>
+            <a href="shop_restaurant.html"><p>Shop & Restaurant</p></a>
+            <ul class="sp-sub-menu">
+              <li><a href="shop_restaurant.html#shop">Shop</a></li>
+              <li><a href="shop_restaurant.html#restaurant">Restaurant</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html"><p>Event</p></a>
+            <ul class="sp-sub-menu">
+              <li>
+                <a href="event.html#symphony"
+                  >「光のジェリーシンフォニー」の見どころ</a
+                >
+              </li>
+              <li><a href="event.html#photo">フォトコンテストについて</a></li>
+              <li><a href="event.html#kaisaigaiyou">開催概要</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="pc-nav" role="navigation">
+        <ul>
+          <li class="menu-item-has-children">
+            <a href="index.html">Top ▼</a>
+            <ul class="sub-menu">
+              <li><a href="index.html#news">最新情報</a></li>
+              <li><a href="index.html#concept">クラゲリウムについて</a></li>
+              <li><a href="index.html#information">チケット・料金</a></li>
+              <li><a href="index.html#pickup">お知らせ</a></li>
+              <li><a href="index.html#access">アクセス</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="floorguide.html">Floor Guide</a>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="shop_restaurant.html">Shop & Restaurant ▼</a>
+            <ul class="sub-menu">
+              <li><a href="shop_restaurant.html#shop">Shop</a></li>
+              <li><a href="shop_restaurant.html#restaurant">Restaurant</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-has-children">
+            <a href="event.html">Event ▼</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="event.html#symphony"
+                  >「光のジェリーシンフォニー」の見どころ</a
+                >
+              </li>
+              <li><a href="event.html#photo">フォトコンテストについて</a></li>
+              <li><a href="event.html#kaisaigaiyou">開催概要</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="wrap">
+        <section class="hero">
+          <img src="img/event/event.webp" class="heroimg" />
+          <h2 class="bound">
+            <span>光</span>
+            <span>の</span>
+            <span>ジ</span>
+            <span>ェ</span>
+            <span>リ</span>
+            <span>ー</span>
+            <span>シ</span>
+            <span>ン</span>
+            <span>フ</span>
+            <span>ォ</span>
+            <span>ニ</span>
+            <span>ー</span>
+          </h2>
+          <img src="img/event/event-day2.webp" alt="" class="eventday" />
+          <div class="gradient"></div>
+        </section>
+        <nav class="event_nav">
+          <ul>
+            <li>
+              <a href="#symphony"
+                ><img src="img/event/event-midashi1.webp" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#photo"
+                ><img src="img/event/event-midashi2.webp" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#kaisaigaiyou"
+                ><img src="img/event/event-midashi3.webp" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <section id="symphony">
+          <h3>「光のジェリーシンフォニー」の見どころ</h3>
+          <div class="symphony-flex">
+            <img src="img/event/symphony01.webp" alt="" />
+            <div class="symphony-left">
+              <h4>チームラゲとクラゲリウムのコラボレーション</h4>
+              <p>
+                あのチームラゲとのコラボレーションが実現！<br />
+                チームラゲのデジタルアートとクラゲの優雅な動きが融合したこのイベントでは、色鮮やかな光と映像がクラゲたちとともに動き、訪れる人々を異次元の空間へと誘います。自然とアートが一体となった、この不思議な世界で、心ゆくまでクラゲの魅力を感じてください。
+              </p>
+              <div class="img-container">
+                <img src="img/event/symphony02.webp" alt="" />
+                <img src="img/event/symphony03.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="photo">
+          <h3>フォトコンテストについて</h3>
+          <div class="photo-flex">
+            <img src="img/event/photo.webp" alt="" />
+            <div class="photo-right">
+              <h4>あなたが捕える一瞬の輝き</h4>
+              <p>
+                イベントに先立ち、「クラゲリウム」ではフォトコンテストを開催します！ご自身が撮影したクラゲの美しい瞬間をぜひご応募ください。クラゲとチームラゲのアートが織り成す幻想的な光景をあなたの視点で表現してください。優れた作品には素敵な賞品が贈られるほか、選ばれた写真は館内で展示されるチャンスも！あなたの「クラゲリウム」の魅力を、写真を通して感じていただけることを楽しみにしています。
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="kaisaigaiyou">
+          <h3>開催概要</h3>
+          <div class="gaiyou">
+            <dl>
+              <dt>会場</dt>
+              <dd>クラゲリウム3F</dd>
+            </dl>
+            <dl>
+              <dt>公開</dt>
+              <dd>2025年1月5日［日］～2025年4月30日［水］</dd>
+            </dl>
+            <dl>
+              <dt>お問い合わせ</dt>
+              <dd>012-345-6789</dd>
+            </dl>
+            <div class="tyuui">
+              <p>※フラッシュ撮影はお控えください。</p>
+              <p>※混雑緩和のため、入場規制を設ける場合がございます。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <svg class="svg" width="720" height="50">
+        <defs>
+          <!-- パス共通（左右に広げている。微調整） -->
+          <path id="path_nami22" d="中略">
+            <animate
+              id="animate_nami22"
+              attributeName="d"
+              dur="2s"
+              repeatCount="indefinite"
+              values="M -40 10 Q -30 20 -20 10 Q -10  0 0 10 Q 10 20 20 10 Q 30  0 40 10 Q 50 20 60 10 Q 70 20 80 10 V 29 H -40 Z;
+                M -40 10 Q -30  0 -20 10 Q -10 20 0 10 Q 10  0 20 10 Q 30 20 40 10 Q 50  0 60 10 Q 70  0 80 10 V 29 H -40 Z;
+                M -40 10 Q -30 20 -20 10 Q -10  0 0 10 Q 10 20 20 10 Q 30  0 40 10 Q 50 20 60 10 Q 70 20 80 10 V 29 H -40 Z;"
+            />
+          </path>
+          <!-- 奥（行ったり来たり） -->
+          <pattern
+            id="ptn_nami22_a"
+            x="0"
+            y="0"
+            width="40"
+            height="30"
+            patternUnits="userSpaceOnUse"
+          >
+            <use href="#path_nami22" fill="rgb(22, 30, 143)" />
+            <animate
+              attributeName="x"
+              dur="4s"
+              repeatCount="indefinite"
+              values="0; 40; 0"
+            />
+          </pattern>
+          <!-- 中（左に移動） -->
+          <pattern
+            id="ptn_nami22_b"
+            x="0"
+            y="10"
+            width="40"
+            height="40"
+            patternUnits="userSpaceOnUse"
+          >
+            <use href="#path_nami22" fill="rgb(84, 88, 143)" />
+            <animate
+              attributeName="x"
+              dur="2s"
+              repeatCount="indefinite"
+              values="0; -40"
+            />
+          </pattern>
+          <!-- 手前（右に移動） -->
+          <pattern
+            id="ptn_nami22_c"
+            x="0"
+            y="20"
+            width="40"
+            height="50"
+            patternUnits="userSpaceOnUse"
+          >
+            <use href="#path_nami22" fill="#ccc" />
+            <animate
+              attributeName="x"
+              dur="2s"
+              repeatCount="indefinite"
+              values="0; 40"
+            />
+          </pattern>
+        </defs>
+        <!-- パターンで塗りつぶす、大きさ調整 -->
+        <rect x="0" y="0" height="30" fill="url(#ptn_nami22_a)"></rect>
+        <rect
+          x="0"
+          y="0"
+          height="40"
+          fill="url(#ptn_nami22_b)"
+          transform="scale(1.5,1)"
+        ></rect>
+        <rect
+          x="0"
+          y="0"
+          height="50"
+          fill="url(#ptn_nami22_c)"
+          transform="scale(2,1)"
+        ></rect>
+      </svg>
+      <div class="TOP">
+        <a href="#wrap"
+          ><p>↑</p>
+          <p>TOPに戻る</p></a
+        >
+      </div>
+      <div class="footer-sp">
+        <h1>
+          <a href="index.html"
+            ><img src="img/kurage-logo4.png" alt="クラゲリウム"
+          /></a>
+        </h1>
+        <address>
+          <p>
+            〒650-0041<br />兵庫県神戸市中央区新港町7番2号<br />神戸ポートミュージアム1F～3F
+          </p>
+        </address>
+        <div class="footer-box">
+          <nav class="footer-nav">
+            <ul class="footer-main">
+              <li>
+                <a href="index.html"><p>Top</p> </a>
+              </li>
+              <li>
+                <a href="floorguide.html"><p>Floor Guide</p> </a>
+              </li>
+              <li>
+                <a href="shop_restaurant.html"><p>Shop & Restaurant</p> </a>
+              </li>
+              <li>
+                <a href="event.html"><p>Event</p></a>
+              </li>
+              <li>
+                <a href="index.html#information"><p>チケット・料金</p></a>
+              </li>
+              <li>
+                <a href="index.html#access"><p>アクセス</p></a>
+              </li>
+            </ul>
+            <ul class="footer-sub">
+              <li>
+                <a href="privacy.html">プライバシーポリシー</a>
+              </li>
+              <li>
+                <a href="tokusyouhou.html">特定商取引法に基づく表記</a>
+              </li>
+              <li>
+                <a href="doubututoriatukaigyou.html">動物取扱業に関する表示</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sns">
+            <p>公式SNS</p>
+            <ul class="logo">
+              <li>
+                <a href="#"><img src="img/icon/facebook.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/insta.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/twitter.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/icon/youtube.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p><small>&copy; copyright</small></p>
+      </div>
+      <div class="footer-pc">
+        <div class="footer-container">
+          <div class="footer-left">
+            <h1>
+              <a href="index.html"
+                ><img src="img/kurage-logo4.png" alt="クラゲリウム"
+              /></a>
+            </h1>
+            <address>
+              <p>
+                〒650-0041<br />
+                兵庫県神戸市中央区新港町7番2号<br />神戸ポートミュージアム1F～3F
+              </p>
+            </address>
+          </div>
+          <div class="footer-right">
+            <nav class="footer-nav">
+              <ul class="pc-footer-main1">
+                <li>
+                  <a href="index.html"><p>Top</p> </a>
+                </li>
+                <li>
+                  <a href="floorguide.html"><p>Floor Guide</p> </a>
+                </li>
+                <li>
+                  <a href="shop_restaurant.html"><p>Shop & Restaurant</p> </a>
+                </li>
+                <li>
+                  <a href="event.html"><p>Event</p></a>
+                </li>
+              </ul>
+              <ul class="pc-footer-main2">
+                <li>
+                  <a href="index.html#information"><p>チケット・料金</p></a>
+                </li>
+                <li>
+                  <a href="index.html#access"><p>アクセス</p></a>
+                </li>
+              </ul>
+              <ul class="pc-footer-sub">
+                <li>
+                  <a href="privacy.html">プライバシーポリシー</a>
+                </li>
+                <li>
+                  <a href="tokusyouhou.html">特定商取引法に基づく表記</a>
+                </li>
+                <li>
+                  <a href="doubututoriatukaigyou.html"
+                    >動物取扱業に関する表示</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="pc-sns">
+              <p>公式SNS</p>
+              <ul class="logo">
+                <li>
+                  <a href="#"><img src="img/icon/facebook.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/icon/insta.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/icon/twitter.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/icon/youtube.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p><small>&copy; copyright</small></p>
+      </div>
+    </footer>
+    <!-- JS読み込み -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- INVEIW -->
+    <script src="js/jquery.inview.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/header.js"></script>
+    <script src="js/inview.js"></script>
+    <script src="js/event.js"></script>
+  </body>
+</html>

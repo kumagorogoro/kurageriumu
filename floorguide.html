@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="img/kurage-logo4.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クラゲリウム</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Swiper CDN読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- WATER -->
+    <link rel="stylesheet" href="css/water.css" />
+    <!-- INVIEW -->
+    <link rel="stylesheet" href="css/ginwari.css" />
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/floorguide.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- WATER -->
+      <div class="grax_tm_hero" id="home">
+        <div class="ripple" id="ripple"></div>
+      </div>
+      <!-- /WATER -->
+      <div class="openbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <header>
+        <h1>
+          <a href="index.html"
+            ><img src="img/kurage-logo4.png" alt="クラゲリウム"
+          /></a>
+        </h1>
+        <nav class="sp-nav">
+          <ul>
+            <li>
+              <a href="index.html"><p>Top</p> </a>
+              <ul class="sp-sub-menu">
+                <li><a href="index.html#news">最新情報</a></li>
+                <li><a href="index.html#concept">クラゲリウムについて</a></li>
+                <li><a href="index.html#information">チケット・料金</a></li>
+                <li><a href="index.html#pickup">お知らせ</a></li>
+                <li><a href="index.html#access">アクセス</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="floorguide.html"><p>Floor Guide</p> </a>
+            </li>
+            <li>
+              <a href="shop_restaurant.html"><p>Shop & Restaurant</p></a>
+              <ul class="sp-sub-menu">
+                <li><a href="shop_restaurant.html#shop">Shop</a></li>
+                <li>
+                  <a href="shop_restaurant.html#restaurant">Restaurant</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="event.html"><p>Event</p></a>
+              <ul class="sp-sub-menu">
+                <li>
+                  <a href="event.html#symphony"
+                    >「光のジェリーシンフォニー」の見どころ</a
+                  >
+                </li>
+                <li><a href="event.html#photo">フォトコンテストについて</a></li>
+                <li><a href="event.html#kaisaigaiyou">開催概要</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="pc-nav" role="navigation">
+          <ul>
+            <li class="menu-item-has-children">
+              <a href="index.html">Top ▼</a>
+              <ul class="sub-menu">
+                <li><a href="index.html#news">最新情報</a></li>
+                <li><a href="index.html#concept">クラゲリウムについて</a></li>
+                <li><a href="index.html#information">チケット・料金</a></li>
+                <li><a href="index.html#pickup">お知らせ</a></li>
+                <li><a href="index.html#access">アクセス</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="floorguide.html">Floor Guide</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="shop_restaurant.html">Shop & Restaurant ▼</a>
+              <ul class="sub-menu">
+                <li><a href="shop_restaurant.html#shop">Shop</a></li>
+                <li>
+                  <a href="shop_restaurant.html#restaurant">Restaurant</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="event.html">Event ▼</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="event.html#symphony"
+                    >「光のジェリーシンフォニー」の見どころ</a
+                  >
+                </li>
+                <li><a href="event.html#photo">フォトコンテストについて</a></li>
+                <li><a href="event.html#kaisaigaiyou">開催概要</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="wrap">
+        <main>
+          <section class="hero">
+            <video src="movie/movie2.mp4" autoplay muted loop></video>
+            <h2>Floor Guide</h2>
+          </section>
+          <section id="floor-guide">
+            <p class="ginwari">
+              「クラゲリウム」では、さまざまな種類のクラゲたちが織りなす美しい世界を、広々とした空間でお楽しみいただけます。各フロアごとに、クラゲの生態や種類、環境をテーマにした展示が広がり、まるでクラゲの海に迷い込んだような感覚を体験できます。
+            </p>
+            <!-- コンテンツ -->
+            <div class="content ginwari">
+              <a href="#floor-guide" class="js-open-modal" data-slide-index="1"
+                >Floor mapを見る→</a
+              >
+            </div>
+            <!-- モーダル -->
+            <div class="modal" id="modal">
+              <div class="modal__overlay js-close-modal"></div>
+              <div class="modal__content">
+                <button
+                  class="modal__close-btn js-close-modal"
+                  aria-label="閉じる"
+                >
+                  ×
+                </button>
+                <!-- スライダー -->
+                <div class="swiper modal__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide modal__slide">
+                      <img
+                        src="img/floorguide/floormap1.webp"
+                        alt="フロアガイドマップ1階"
+                      />
+                    </div>
+                    <div class="swiper-slide modal__slide">
+                      <img
+                        src="img/floorguide/floormap2.webp"
+                        alt="フロアガイドマップ2階"
+                      />
+                    </div>
+                    <div class="swiper-slide modal__slide">
+                      <img
+                        src="img/floorguide/floormap3.webp"
+                        alt="フロアガイドマップ3階"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="floor">
+            <div class="floor">
+              <h3 class="ginwari">1F</h3>
+              <div class="floor-box1 ginwari">
+                <img
+                  src="img/floorguide/hikarinohyouryuu.webp"
+                  alt="光の漂流"
+                />
+                <div>
+                  <h4>光の漂流</h4>
+                  <p>
+                    クラゲリウムに入ってすぐ足元に広がる床面アクアリウムには、柔らかな光に包まれたクラゲたちが、静かに漂っています。<br />
+                    ゆらめく光とともに優雅に泳ぐクラゲたちが織りなす幻想的な世界は、訪れる人々を神秘的な海の深層へと誘います。
+                  </p>
+                </div>
+              </div>
+              <div class="floor-box2 ginwari">
+                <img
+                  src="img/floorguide/minikuragenohousekibako.webp"
+                  alt="ミニクラゲの宝石箱"
+                />
+                <div>
+                  <h4 class="ginwari">ミニクラゲの宝石箱</h4>
+                  <p>
+                    小さな水槽の中で、色とりどりのクラゲたちがまるで宝石のように輝きながら漂い、その優雅な動きが訪れる人々を魅了します。微細なクラゲたちの姿は、海の中で宝物を探し出すような感覚を与えてくれます。クラゲの美しさを間近で感じられる癒しの空間です。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="floor">
+              <h3 class="ginwari">2F</h3>
+              <div class="floor-box1 ginwari">
+                <img
+                  src="img/floorguide/mainkuragerium.webp"
+                  alt="MAIN KURAGERIUM"
+                />
+                <div>
+                  <h4>MAIN KURAGERIUM</h4>
+                  <p>
+                    クラゲリウムの中心となる壮大な水槽で、まるで海の中に迷い込んだかのような幻想的な世界が広がります。水槽の中でゆったりと漂うクラゲたちの姿は、まるで夢の中のように美しく、人々を神秘的な静けさで包み込みます。ぜひ、深海世界に引き込まれるような体験をお楽しみください。
+                  </p>
+                </div>
+              </div>
+              <div class="floor-box2 ginwari">
+                <img src="img/floorguide/tower.webp" alt="KURAGE TOWER" />
+                <div>
+                  <h4>KURAGE TOWER</h4>
+                  <p>
+                    クラゲの魅力を360度の視点で楽しめる展示エリアです。高さのあるタワーの中には、さまざまな種類のクラゲが浮遊し、優雅で幻想的な姿を間近で観賞できます。タワー内の水槽は、クラゲたちが自由に泳ぎ回るための特別な設計が施され、光と水のコラボレーションが生み出す美しい演出が訪れる人々を魅了します。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="floor">
+              <h3 class="ginwari">3F</h3>
+              <div class="floor-box1 ginwari">
+                <img src="img/floorguide/sinpinoentyuu.webp" alt="神秘の円筒" />
+                <div>
+                  <h4>神秘の円筒</h4>
+                  <p>
+                    円柱型の水槽に広がるクラゲたちの幻想的な世界を堪能できるエリアです。水槽の中でクラゲたちが静かに漂う様子は、まるで未知の深海の世界を覗いているかのよう。クラゲたちの姿が柔らかく輝きながら、神秘的なエネルギーを放っているかのような印象を与えます。
+                  </p>
+                </div>
+              </div>
+              <div class="floor-box2 ginwari">
+                <img src="img/floorguide/culture.webp" alt="CULTURE SPACE" />
+                <div>
+                  <h4>CULTURE SPACE</h4>
+                  <p>
+                    クラゲリウムのカルチャースペースでは、毎日「クラゲ博士」になるためのワークショップやイベントが開催されています。ここでは、クラゲの生態や不思議な魅力について学びながら、クラゲについて深く知ることができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <svg class="svg" width="720" height="50">
+            <defs>
+              <!-- パス共通（左右に広げている。微調整） -->
+              <path id="path_nami22" d="中略">
+                <animate
+                  id="animate_nami22"
+                  attributeName="d"
+                  dur="2s"
+                  repeatCount="indefinite"
+                  values="M -40 10 Q -30 20 -20 10 Q -10  0 0 10 Q 10 20 20 10 Q 30  0 40 10 Q 50 20 60 10 Q 70 20 80 10 V 29 H -40 Z;
+                M -40 10 Q -30  0 -20 10 Q -10 20 0 10 Q 10  0 20 10 Q 30 20 40 10 Q 50  0 60 10 Q 70  0 80 10 V 29 H -40 Z;
+                M -40 10 Q -30 20 -20 10 Q -10  0 0 10 Q 10 20 20 10 Q 30  0 40 10 Q 50 20 60 10 Q 70 20 80 10 V 29 H -40 Z;"
+                />
+              </path>
+              <!-- 奥（行ったり来たり） -->
+              <pattern
+                id="ptn_nami22_a"
+                x="0"
+                y="0"
+                width="40"
+                height="30"
+                patternUnits="userSpaceOnUse"
+              >
+                <use href="#path_nami22" fill="rgb(22, 30, 143)" />
+                <animate
+                  attributeName="x"
+                  dur="4s"
+                  repeatCount="indefinite"
+                  values="0; 40; 0"
+                />
+              </pattern>
+              <!-- 中（左に移動） -->
+              <pattern
+                id="ptn_nami22_b"
+                x="0"
+                y="10"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <use href="#path_nami22" fill="rgb(84, 88, 143)" />
+                <animate
+                  attributeName="x"
+                  dur="2s"
+                  repeatCount="indefinite"
+                  values="0; -40"
+                />
+              </pattern>
+              <!-- 手前（右に移動） -->
+              <pattern
+                id="ptn_nami22_c"
+                x="0"
+                y="20"
+                width="40"
+                height="50"
+                patternUnits="userSpaceOnUse"
+              >
+                <use href="#path_nami22" fill="#ccc" />
+                <animate
+                  attributeName="x"
+                  dur="2s"
+                  repeatCount="indefinite"
+                  values="0; 40"
+                />
+              </pattern>
+            </defs>
+            <!-- パターンで塗りつぶす、大きさ調整 -->
+            <rect x="0" y="0" height="30" fill="url(#ptn_nami22_a)"></rect>
+            <rect
+              x="0"
+              y="0"
+              height="40"
+              fill="url(#ptn_nami22_b)"
+              transform="scale(1.5,1)"
+            ></rect>
+            <rect
+              x="0"
+              y="0"
+              height="50"
+              fill="url(#ptn_nami22_c)"
+              transform="scale(2,1)"
+            ></rect>
+          </svg>
+          <div class="TOP">
+            <a href="#wrap"
+              ><p>↑</p>
+              <p>TOPに戻る</p></a
+            >
+          </div>
+          <div class="footer-sp">
+            <h1>
+              <a href="index.html"
+                ><img src="img/kurage-logo4.png" alt="クラゲリウム"
+              /></a>
+            </h1>
+            <address>
+              <p>
+                〒650-0041<br />兵庫県神戸市中央区新港町7番2号<br />神戸ポートミュージアム1F～3F
+              </p>
+            </address>
+            <div class="footer-box">
+              <nav class="footer-nav">
+                <ul class="footer-main">
+                  <li>
+                    <a href="index.html"><p>Top</p> </a>
+                  </li>
+                  <li>
+                    <a href="floorguide.html"><p>Floor Guide</p> </a>
+                  </li>
+                  <li>
+                    <a href="shop_restaurant.html"><p>Shop & Restaurant</p> </a>
+                  </li>
+                  <li>
+                    <a href="event.html"><p>Event</p></a>
+                  </li>
+                  <li>
+                    <a href="index.html#information"><p>チケット・料金</p></a>
+                  </li>
+                  <li>
+                    <a href="index.html#access"><p>アクセス</p></a>
+                  </li>
+                </ul>
+                <ul class="footer-sub">
+                  <li>
+                    <a href="privacy.html">プライバシーポリシー</a>
+                  </li>
+                  <li>
+                    <a href="tokusyouhou.html">特定商取引法に基づく表記</a>
+                  </li>
+                  <li>
+                    <a href="doubututoriatukaigyou.html"
+                      >動物取扱業に関する表示</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="sns">
+                <p>公式SNS</p>
+                <ul class="logo">
+                  <li>
+                    <a href="#"><img src="img/icon/facebook.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/icon/insta.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/icon/twitter.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/icon/youtube.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p><small>&copy; copyright</small></p>
+          </div>
+          <div class="footer-pc">
+            <div class="footer-container">
+              <div class="footer-left">
+                <h1>
+                  <a href="index.html"
+                    ><img src="img/kurage-logo4.png" alt="クラゲリウム"
+                  /></a>
+                </h1>
+                <address>
+                  <p>
+                    〒650-0041<br />
+                    兵庫県神戸市中央区新港町7番2号<br />神戸ポートミュージアム1F～3F
+                  </p>
+                </address>
+              </div>
+              <div class="footer-right">
+                <nav class="footer-nav">
+                  <ul class="pc-footer-main1">
+                    <li>
+                      <a href="index.html"><p>Top</p> </a>
+                    </li>
+                    <li>
+                      <a href="floorguide.html"><p>Floor Guide</p> </a>
+                    </li>
+                    <li>
+                      <a href="shop_restaurant.html"
+                        ><p>Shop & Restaurant</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="event.html"><p>Event</p></a>
+                    </li>
+                  </ul>
+                  <ul class="pc-footer-main2">
+                    <li>
+                      <a href="index.html#information"><p>チケット・料金</p></a>
+                    </li>
+                    <li>
+                      <a href="index.html#access"><p>アクセス</p></a>
+                    </li>
+                  </ul>
+                  <ul class="pc-footer-sub">
+                    <li>
+                      <a href="privacy.html">プライバシーポリシー</a>
+                    </li>
+                    <li>
+                      <a href="tokusyouhou.html">特定商取引法に基づく表記</a>
+                    </li>
+                    <li>
+                      <a href="doubututoriatukaigyou.html"
+                        >動物取扱業に関する表示</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <div class="pc-sns">
+                  <p>公式SNS</p>
+                  <ul class="logo">
+                    <li>
+                      <a href="#"><img src="img/icon/facebook.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/icon/insta.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/icon/twitter.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/icon/youtube.png" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p><small>&copy; copyright</small></p>
+          </div>
+        </footer>
+      </div>
+      <!-- JS読み込み -->
+      <!-- WATER -->
+      <script src="js/jquery.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/init.js"></script>
+      <!-- INVIEW -->
+      <script type="text/javascript" src="./js/jquery.inview.min.js"></script>
+      <!--自作のJS-->
+      <script src="js/header.js"></script>
+      <script src="js/floorguide.js"></script>
+    </div>
+  </body>
+</html>

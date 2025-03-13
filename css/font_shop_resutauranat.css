@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Zen Kaku Gothic Antique", serif;
+}
+
+.hero h2 {
+  font-family: "Zen Old Mincho", serif;
+}
+header {
+  font-family: "Zen Old Mincho", serif;
+}
+
+footer {
+  font-family: "Zen Old Mincho", serif;
+}
