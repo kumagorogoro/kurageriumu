@@ -1,25 +1,15 @@
-const weekendImage = "/img/top/eigyoujikan2.png"; // 土日祝日に表示する画像
-const weekdayImage = "/img/top/eigyoujikan.webp"; // 平日に表示する画像
-const wednesdayImage = "/img/top/eigyoujikan3.png"; // 水曜日用の画像
-const holidayPeriodImage = "/img/top/eigyoujikan3.png"; // 12月30日から1月3日用の画像
-
-// 祝日を取得する関数
+// 祝日情報を取得するサーバーサイドAPIのエンドポイントを呼び出す
 async function isHoliday(date) {
   const year = date.getFullYear();
   const dateString = date.toISOString().split("T")[0]; // YYYY-MM-DD 形式
-  // 日本の祝日APIから祝日データを取得
+  // サーバーサイドの祝日APIを呼び出す（例えば、Node.js Expressサーバー経由で）
   try {
-    const response = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://holidays-jp.github.io/api/v1/holidays/${year}.json`
-    );
-
-    // レスポンスがOKでない場合はエラー
+    const response = await fetch(`/api/holidays/${year}`);
     if (!response.ok) {
       throw new Error(`HTTPエラー: ${response.status}`);
     }
 
     const holidays = await response.json();
-    // 祝日がリストに含まれているか確認
     return holidays.hasOwnProperty(dateString);
   } catch (error) {
     console.error("祝日情報の取得に失敗しました:", error);
