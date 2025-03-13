@@ -50,3 +50,28 @@ const today = new Date();
     document.getElementById("image").src = weekdayImage;
   }
 })();
+
+const express = require("express");
+const fetch = require("node-fetch");
+const app = express();
+
+app.get("/api/holidays/:year", async (req, res) => {
+  const year = req.params.year;
+  try {
+    const response = await fetch(
+      `https://holidays-jp.github.io/api/v1/holidays/${year}.json`
+    );
+    if (!response.ok) {
+      throw new Error(`HTTPエラー: ${response.status}`);
+    }
+    const holidays = await response.json();
+    res.json(holidays);
+  } catch (error) {
+    console.error("祝日情報の取得に失敗しました:", error);
+    res.status(500).send("祝日情報の取得に失敗しました");
+  }
+});
+
+app.listen(3000, () => {
+  console.log("サーバーがポート3000で稼働中");
+});
